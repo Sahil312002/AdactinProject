@@ -1,0 +1,137 @@
+[
+  {
+    "line": 2,
+    "elements": [
+      {
+        "start_timestamp": "2022-08-18T09:18:08.215Z",
+        "line": 11,
+        "name": "Verify the login details with invalid credentials.",
+        "description": "",
+        "id": "verify-login-details-of-adactin-website;verify-the-login-details-with-invalid-credentials.;;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 6825000000,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "User is on Adactin Login page.",
+            "match": {
+              "location": "org.stepdefinition.A_Login.user_is_on_Adactin_Login_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 280000000,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "User enters \"adm123\" and \"12345\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"adm123\"",
+                  "offset": 12
+                },
+                {
+                  "val": "\"12345\"",
+                  "offset": 25
+                }
+              ],
+              "location": "org.stepdefinition.A_Login.user_enters_and(java.lang.String,java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "error_message": "java.lang.AssertionError: expected [https://adactinhotelapp.com/HotelAppBuild2/SearchHotel.php] but found [https://adactinhotelapp.com/HotelAppBuild2/index.php]\r\n\tat org.testng.Assert.fail(Assert.java:93)\r\n\tat org.testng.Assert.failNotEquals(Assert.java:512)\r\n\tat org.testng.Assert.assertEqualsImpl(Assert.java:134)\r\n\tat org.testng.Assert.assertEquals(Assert.java:115)\r\n\tat org.testng.Assert.assertEquals(Assert.java:189)\r\n\tat org.testng.Assert.assertEquals(Assert.java:199)\r\n\tat org.stepdefinition.A_Login.user_should_click_on_Login_Button(A_Login.java:53)\r\n\tat ✽.User should click on Login Button(file:///C:/Users/Sahil%20Ghadge/eclipse-workspace/AdactinProject/src/test/resources/Feature/A_Login.feature:7)\r\n",
+              "duration": 788000000,
+              "status": "failed"
+            },
+            "line": 7,
+            "name": "User should click on Login Button",
+            "match": {
+              "location": "org.stepdefinition.A_Login.user_should_click_on_Login_Button()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@login"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2022-08-18T09:18:16.213Z",
+        "line": 13,
+        "name": "Verify the login details with valid credentials.",
+        "description": "",
+        "id": "verify-login-details-of-adactin-website;verify-the-login-details-with-valid-credentials.",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 3426000000,
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "User is on Adactin Login page.",
+            "match": {
+              "location": "org.stepdefinition.A_Login.user_is_on_Adactin_Login_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 147000000,
+              "status": "passed"
+            },
+            "line": 15,
+            "name": "User enters username and password",
+            "match": {
+              "location": "org.stepdefinition.A_Login.user_enters_username_and_password()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 1004000000,
+              "status": "passed"
+            },
+            "line": 16,
+            "name": "User again click on Login Button",
+            "match": {
+              "location": "org.stepdefinition.A_Login.user_again_click_on_Login_Button()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@login"
+          }
+        ]
+      }
+    ],
+    "name": "verify login details of Adactin website",
+    "description": "",
+    "id": "verify-login-details-of-adactin-website",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/Feature/A_Login.feature",
+    "tags": [
+      {
+        "name": "@login",
+        "type": "Tag",
+        "location": {
+          "line": 1,
+          "column": 1
+        }
+      }
+    ]
+  }
+]
